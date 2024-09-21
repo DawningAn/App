@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>用户注册</h1>
+<form method="post" action="/register">  <!--method="post"提交方式 action="提交的地址"-->
+    <div> <!--给数据项起名-->
+        用户名：<input type="text" name="user"/>
+    </div>
+
+    <div>
+        密码：<input type="password" name="pwd"/>
+    </div>
+    <div>
+        性别
+        <input type="radio" name="gender" value="1"/>男
+        <input type="radio" name="gender" value="0"/>女
+    </div>
+    <div>
+        请选择你的英雄
+        <input type="checkbox" name="hobby" value="10"/>孙膑
+        <input type="checkbox" name="hobby" value="20"/>吴起
+        <input type="checkbox" name="hobby" value="30"/>商鞅
+        <input type="checkbox" name="hobby" value="40"/>张仪
+        <input type="checkbox" name="hobby" value="50"/>苏秦
+    </div>
+    <div>
+        城市
+        <select name="city">
+            <option value="bj">北京</option>
+            <option value="sh">上海</option>
+            <option value="gz">广州</option>
+            <option value="sz">深圳</option>
+        </select>
+    </div>
+
+    <div>
+        备注:<textarea name = "more"></textarea>
+
+    </div>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
